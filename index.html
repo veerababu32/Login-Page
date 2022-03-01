@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <section>
+      <div class="imgBx">
+        <img src="mercades.jpg" alt="mercades">
+      </div>
+      <div class="contentBx">
+        <div class="formBx">
+          <h1>Login</h1>
+          <form action="" class="login__form" id="login-in" onsubmit="return validateForm()">
+            <div class="login__box">
+              <i class='bx bx-user login__icon'></i>
+              <input type="text" placeholder="Username" class="login__input" id="email" onblur="validate1()">
+            </div>
+            <p id="error1" class="error"></p>
+            <div class="login__box">
+              <i class='bx bx-lock-alt login__icon'></i>
+              <input type="password" placeholder="Password" class="login__input" id="pass" onblur="validate2()">
+            </div>
+            <p id="error2" class="error"></p>
+            <div class="remeber-me">
+              <label for="remeberMe">
+              <input type="checkbox" id="remeberMe" name="remeber" >
+              Remeber me</label>
+            </div>
+            <div class="btn">
+              <input type="submit" value="Sign In" name="sign-in">
+            </div>
+            <p id="error3" class="error"></p>
+            <h3 class="sub-title">Login with social media</h3>
+            <ul class="icons">
+              <li><a href="https://www.gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a></li>
+              <li><a href="https://www.twitter.com" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+              <li><a href="https://www.facebook.com" target="_blank"><i class='bx bxl-meta'></i></a></li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="login.js"></script>
+  </body>
+</html>
